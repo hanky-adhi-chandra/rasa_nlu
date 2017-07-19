@@ -4,38 +4,64 @@
       {
         "name": "zipcode",
         "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "hallo",
+        "pattern": "h[ae][l]lo]"
+      },
+      {
+        "name": "target1",
+        "pattern": "[a-zA-Z]{1}[a-zA-Z .]*"
       }
     ],
     "entity_synonyms": [
       {
         "value": "chinese",
-        "synonyms": ["Chinese", "Chines", "chines"]
+        "synonyms": [
+          "Chinese",
+          "Chines",
+          "chines"
+        ]
+      },
+      {
+        "value": "kamu",
+        "synonyms": [
+          "anda"
+        ]
+      },
+      {
+        "value": "bagaimana",
+        "synonyms": [
+          "gimana",
+          "pigimana",
+          "cemana"
+        ]
       }
     ],
     "common_examples": [
       {
-        "text": "hey", 
-        "intent": "greet", 
+        "text": "hey",
+        "intent": "greet",
         "entities": []
-      }, 
+      },
       {
-        "text": "howdy", 
-        "intent": "greet", 
+        "text": "howdy",
+        "intent": "greet",
         "entities": []
-      }, 
+      },
       {
         "text": "hey there",
-        "intent": "greet", 
+        "intent": "greet",
         "entities": []
-      }, 
+      },
       {
-        "text": "hello", 
-        "intent": "greet", 
+        "text": "hello",
+        "intent": "greet",
         "entities": []
-      }, 
+      },
       {
-        "text": "hi", 
-        "intent": "greet", 
+        "text": "hi",
+        "intent": "greet",
         "entities": []
       },
       {
@@ -54,18 +80,18 @@
         "entities": []
       },
       {
-        "text": "yes", 
-        "intent": "affirm", 
+        "text": "yes",
+        "intent": "affirm",
         "entities": []
-      }, 
+      },
       {
-        "text": "yep", 
-        "intent": "affirm", 
+        "text": "yep",
+        "intent": "affirm",
         "entities": []
-      }, 
+      },
       {
-        "text": "yeah", 
-        "intent": "affirm", 
+        "text": "yeah",
+        "intent": "affirm",
         "entities": []
       },
       {
@@ -160,19 +186,19 @@
         ]
       },
       {
-        "text": "show me a mexican place in the centre", 
-        "intent": "restaurant_search", 
+        "text": "show me a mexican place in the centre",
+        "intent": "restaurant_search",
         "entities": [
           {
-            "start": 31, 
-            "end": 37, 
-            "value": "centre", 
+            "start": 31,
+            "end": 37,
+            "value": "centre",
             "entity": "location"
-          }, 
+          },
           {
-            "start": 10, 
-            "end": 17, 
-            "value": "mexican", 
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
             "entity": "cuisine"
           }
         ]
@@ -188,7 +214,8 @@
             "entity": "cuisine"
           }
         ]
-      },     {
+      },
+      {
         "text": "search for restaurants",
         "intent": "restaurant_search",
         "entities": []
@@ -272,28 +299,28 @@
         ]
       },
       {
-        "text": "bye", 
-        "intent": "goodbye", 
+        "text": "bye",
+        "intent": "goodbye",
         "entities": []
-      }, 
+      },
       {
-        "text": "goodbye", 
-        "intent": "goodbye", 
+        "text": "goodbye",
+        "intent": "goodbye",
         "entities": []
-      }, 
+      },
       {
-        "text": "good bye", 
-        "intent": "goodbye", 
+        "text": "good bye",
+        "intent": "goodbye",
         "entities": []
-      }, 
+      },
       {
-        "text": "stop", 
-        "intent": "goodbye", 
+        "text": "stop",
+        "intent": "goodbye",
         "entities": []
-      }, 
+      },
       {
-        "text": "end", 
-        "intent": "goodbye", 
+        "text": "end",
+        "intent": "goodbye",
         "entities": []
       },
       {
@@ -310,6 +337,390 @@
         "text": "have a good one",
         "intent": "goodbye",
         "entities": []
+      },
+      {
+        "text": "hallo apa kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "apa",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "hi apa kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "apa",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "hello apa kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "apa",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "hi pa kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "apa",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "hallo bagaimana kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "bagaimana",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "hi gimana kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "bagaimana",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "hallo gimana kabar",
+        "intent": "kabar",
+        "entities": [
+          {
+            "start": 6,
+            "end": 12,
+            "value": "bagaimana",
+            "entity": "subject"
+          }
+        ]
+      },
+      {
+        "text": "anda kenal joe",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "joe",
+            "entity": "target1"
+          },
+          {
+            "start": 0,
+            "end": 4,
+            "value": "anda",
+            "entity": "source1"
+          }
+        ]
+      },
+      {
+        "text": "kenal sama ronda",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "ronda",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kenal jo",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "jo",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kamu kenal suryo",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "kamu",
+            "entity": "source1"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "suryo",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "anda kenal dengan suroto",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "anda",
+            "entity": "source1"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "suroto",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kamu kenal dengan sulaksono",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "kamu",
+            "entity": "source1"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "value": "sulaksono",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kenal dengan jo",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 13,
+            "end": 15,
+            "value": "jo",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kamu kenal sama jane",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "kamu",
+            "entity": "source1"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "value": "jane",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kamu kenal dengan john xtr",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "kamu",
+            "entity": "source1"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "john xtr",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "anda kenal dengan sup   armin",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "anda",
+            "entity": "source1"
+          },
+          {
+            "start": 18,
+            "end": 29,
+            "value": "sup   armin",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kenal sama kyl ren",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "kyl ren",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "kamu kenal sama je xtrt",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "kamu",
+            "entity": "source1"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "je xtrt",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "anda kenal sama mr smith",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "anda",
+            "entity": "source1"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "mr smith",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "apakah budi berteman dengan iwan",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "budi",
+            "entity": "source1"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "iwan",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "apakah antoni berteman dengan iwan subrata",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "antoni",
+            "entity": "source1"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "iwan subrata",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "apakah mr smith berteman dengan mrs smith",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "mr smith",
+            "entity": "source1"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "mrs smith",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "apakah lina adalah temannya budianto",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "lina",
+            "entity": "source1"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "value": "budianto",
+            "entity": "target1"
+          }
+        ]
+      },
+      {
+        "text": "apakah suprianto adalah temannya rick",
+        "intent": "kenalan",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "suprianto",
+            "entity": "source1"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "value": "rick",
+            "entity": "target1"
+          }
+        ]
       }
     ]
   }
